@@ -1,0 +1,144 @@
+$("#account-exit").click(function(){
+	$.ajax({
+		type: "POST",
+		url: "action/exit.class.php",
+		data: {
+		},
+		dataType: "json",
+		success: function(data) {
+			var obj = eval(data);
+			if (obj.code == '1') {
+				window.location.href = "./index.php";
+			} else {
+				alert(obj.msg);
+			}
+		}
+	});
+});
+$("#account-buyer").click(function(){
+	window.location.href="./buyer.php";
+});
+$("#account-main-left-buyer").click(function(){
+	window.location.href="./buyer.php";
+});
+$("#account-index").click(function(){
+	window.location.href="./index.php";
+});
+$("#account-main-left-address").click(function(){
+	window.location.href="./address.php";
+});
+$(".modify-address").click(function(){
+	window.location.href="./address.php";
+});
+$(".self-info").click(function(){
+	window.location.href="./selfinfosetting.php";
+});
+$(".daishouhuo").click(function(){
+	window.location.href="./receipt.php";
+});
+$(".yishouhuo").click(function(){
+	window.location.href="./receive.php";
+});
+$(".fenqijinxingshi").click(function(){
+	window.location.href="./fenqijinxingshi.php";
+});
+$(".meiriqiandao").click(function(){
+	window.location.href="./meiriqiandao.php";
+});
+$(".wodejifen").click(function(){
+	window.location.href="./myjifen.php";
+});
+$(".jifenshangcheng").click(function(){
+	window.location.href="./jifenshangcheng.php";
+});
+$(".fenqi-record").click(function(){
+	window.location.href="./order.php";
+});
+$("#account-main-left-function").click(function(){
+	window.location.href="./account.php";
+});
+$("#modify-pwd").click(function(){
+	window.location.href="./modifypwd.php";
+});
+$("#account-main-left-receipt").click(function(){
+	window.location.href="./receipt.php";
+});
+$("#account-main-left-receipt").click(function(){
+	window.location.href="./receipt.php";
+});
+$("#account-main-left-receive").click(function(){
+	window.location.href="./receive.php";
+});
+$("#account-main-left-fenqijinxingshi").click(function(){
+	window.location.href="./fenqijinxingshi.php";
+});
+$("#account-main-left-meiriqiandao").click(function(){
+	window.location.href="./meiriqiandao.php";
+});
+$("#account-main-left-myjifen").click(function(){
+	window.location.href="./myjifen.php";
+});
+$("#account-main-left-jifenrecord").click(function(){
+	window.location.href="./jifenrecord.php";
+});
+$("#account-main-left-selfinfosetting").click(function(){
+	window.location.href="./selfinfosetting.php";
+});
+$("#account-main-left-message").click(function(){
+	window.location.href="./message.php";
+});
+$('#receipt-order').click(function(){
+	window.location.href="./receipt.php";
+});
+$('#account-main-left-all-order').click(function(){
+	window.location.href="./order.php";
+});
+$('#receive-order').click(function(){
+	window.location.href="./receive.php";
+});
+$('#fenqi-order').click(function(){
+	window.location.href="./fenqijinxingshi.php";
+});
+$('#all-order').click(function(){
+	window.location.href="./order.php";
+});
+$('#suoyoujilu').click(function(){
+	window.location.href="./myjifen.php?r=1";
+});
+$('#huoqujilu').click(function(){
+	window.location.href="./myjifen.php?r=2";
+});
+$('#shiyongjilu').click(function(){
+	window.location.href="./myjifen.php?r=3";
+});
+$('#check-all-t').click(function(){
+	if($('#check-all-t').attr("checked")=="checked"){
+		$(".check-element").attr("checked","checked");
+	}else{
+		$(".check-element").removeAttr("checked");
+	}
+});
+$('#check-all-b').click(function(){
+	if($('#check-all-b').attr("checked")=="checked"){
+		$(".check-element").attr("checked","checked");
+	}else{
+		$(".check-element").removeAttr("checked");
+	}
+});
+$('#check-all-t-t').click(function(){
+	if($('#check-all-t').attr("checked")=="checked"){
+		$(".check-element").removeAttr("checked");
+	}else{
+		$(".check-element").attr("checked","checked");
+	}
+});
+$('#check-all-b-t').click(function(){
+	if($('#check-all-b').attr("checked")=="checked"){
+		$(".check-element").removeAttr("checked");
+	}else{
+		$(".check-element").attr("checked","checked");
+	}
+});
+$("#my-orders").click(function(){
+	window.location.href="./order.php";
+});
